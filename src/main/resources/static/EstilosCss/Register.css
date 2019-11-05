@@ -1,0 +1,39 @@
+section{
+    width: 800px;
+    height:aut;
+    margin:20px  auto;
+    background: white;
+    border-radius: 5px;
+}
+section h1{
+    text-align: center;
+    padding: 15px;
+}
+section .formulario {
+    margin: auto;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+section .formulario input{
+    margin:10px auto;
+    width: 100%;
+    height:50px;
+    border:1px solid gray;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding:0px 20px;
+}
+.text{
+    border:none;
+}
+.boton{
+    background:#444a4e; 
+    cursor: pointer;
+    color: white;
+}
+.boton:hover{
+    background:#4d575c; 
+}
