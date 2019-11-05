@@ -33,6 +33,9 @@ public class Cliente {
 	@Column(name = "DNI_cli", length = 8, nullable = false)
 	private String DNI;
 	
+	@Column(name = "Contraseña", length = 8, nullable = false)
+	private String contra;
+	
 	@OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
 	private List<DetallePedido> detalles;
 	

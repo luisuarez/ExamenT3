@@ -1,0 +1,32 @@
+html,body{
+margin:0;
+padding:0;
+background: cornsilk;
+}
+header{
+    width: 100%;
+    height: auto;
+}
+.lista{
+    margin: 0px;
+    padding:0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: rgb(202, 57, 57);
+    list-style: none;
+}
+.lista li{
+    padding:15px 0;
+    border-right:1px solid black;
+}
+.lista li a{
+    padding:15px 25px;
+    text-decoration: none;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lista li a:hover{
+    cursor:pointer;
+    background: gray;
+}

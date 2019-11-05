@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:fragmen="head">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="/EstilosCss/layout.css">
+<link rel="stylesheet" href="/EstilosCss/SignIn.css">
+<title>Insert title here</title>
+</head>
+<body>
+	<header>
+		<ul class="lista">
+			<li><a th:href="@{/}">Index</a></li>
+			<li><a href="#">Sign out</a></li>
+			<li><a th:href="@{/Catalogo/Consultar}">CatalogoEdicion</a></li>
+		</ul>
+	</header>
+	<section>
+        <form method="Post" th:action="@{/Catalogo/Guardar}" th:object="${plato}">
+            <div class="SignIn">
+                <h1>Registro de Platos</h1>
+                <img src="/images/camaleon.svg" style="background:white" width="200">
+                <input type="text" placeholder="Nombre" th:field=*{nombre}/>
+                <input type="text" placeholder="Descripcion" th:field=*{descripcion}/>
+                <input type="text" placeholder="Precio" th:field=*{precio}/>
+                <input type="submit" class="boton"/>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
